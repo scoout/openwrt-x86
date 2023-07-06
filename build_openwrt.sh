@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OUTPUT="$(pwd)/images"
-BUILD_VERSION="21.02.7"
+BUILD_VERSION="22.03.5"
 BOARD_NAME="x86"
 BOARD_SUBNAME="64"
 BUILDER="https://downloads.openwrt.org/releases/${BUILD_VERSION}/targets/${BOARD_NAME}/${BOARD_SUBNAME}/openwrt-imagebuilder-${BUILD_VERSION}-${BOARD_NAME}-${BOARD_SUBNAME}.Linux-x86_64.tar.xz"
@@ -35,7 +35,7 @@ make image PROFILE="generic" \
            kmod-usb-uhci e2fsprogs resize2fs htop debootstrap luci-compat luci-lib-ipkg -dnsmasq dnsmasq-full luci-app-ttyd irqbalance \
            ethtool netperf speedtest-netperf iperf3 curl wget rsync file lsof less mc tree usbutils diffutils \
            openssh-sftp-server nano kmod-fs-exfat kmod-fs-ext4 urngd usign vpn-policy-routing wg-installer-client \
-           kmod-usb-core kmod-usb3 dropbear zlib wireless-regdb f2fsck kmod-usb-wdm kmod-usb-net-ipheth usbmuxd \
+           kmod-usb-core kmod-usb3 dropbear zlib wireless-regdb f2fsck kmod-usb-wdm kmod-usb-net-ipheth usbmuxd usb-modeswitch \
            kmod-usb-net-asix-ax88179 kmod-usb-net-cdc-ether mount-utils kmod-rtl8xxxu kmod-rtl8187 rtl8188eu-firmware \
            kmod-rtl8192ce kmod-rtl8192de adblock luci-app-adblock kmod-fs-squashfs squashfs-tools-unsquashfs \
            squashfs-tools-mksquashfs luci-app-uhttpd kmod-fs-f2fs kmod-fs-vfat git git-http jq bash \
